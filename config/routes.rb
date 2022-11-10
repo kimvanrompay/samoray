@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'nl/home'
+  root 'nl#home'
   get 'nl/about'
   get 'nl/legal'
   get 'nl/prijs'

@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
-        Ubuntu: ['Ubuntu'],
+        sans: ['Prompt', ...defaultTheme.fontFamily.sans],
+        Prompt: ['Prompt'],
       }
     },
   },

@@ -4,6 +4,9 @@ class NlController < ApplicationController
 
   def about
   end
+  
+  def sectoren
+  end
 
   def legal
   end
@@ -15,5 +18,11 @@ class NlController < ApplicationController
   end
 
   def diensten
+  end
+  
+  def contact
+  end
+  
+  def pentest
   end
 end

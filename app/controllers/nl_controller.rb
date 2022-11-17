@@ -25,4 +25,34 @@ class NlController < ApplicationController
   
   def pentest
   end
+  
+  def webapp
+  end
+  
+    def api
+  end
+  
+    def awspen
+  end
+  
+    def cloud
+  end
+  
+    def expert
+  end
+  
+    def mobile
+  end
+  
+    def redteam
+  end
+  
+    def socialeng
+  end
+  
+    def wireless
+  end
+  
+    def workshops
+  end
 end

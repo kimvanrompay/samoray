@@ -1,0 +1,23 @@
+<div class="mx-auto bg-white w-full flex">
+  <div class="mx-auto">
+    <% if notice.present? %>
+      <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+    <% end %>
+
+        <div class="text-center font-Prompt uppercase p-10">
+          <h2 class="text-xl font-bold tracking-tight text-gray-400"><%= @blog.created_at %></h2>
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl"><%= @blog.title %></h2>
+    </div>
+    <div>
+      <p class="text-2xl max-w-3xl">
+        <%= @blog.body %>
+      </p>
+    </div>
+
+    <%= link_to 'Edit this blog', edit_blog_path(@blog), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <div class="inline-block ml-2">
+      <%= button_to 'Destroy this blog', blog_path(@blog), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+    </div>
+    <%= link_to 'Back to blogs', blogs_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  </div>
+</div>

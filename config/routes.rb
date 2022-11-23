@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blogs
   root 'nl#home'
   get 'nl/about'
   get 'nl/sectoren'
